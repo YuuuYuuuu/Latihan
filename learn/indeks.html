@@ -1,0 +1,172 @@
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="css/framework7.bundle.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+    <div class="panel panel-left panel-cover panel-resizable panel-init">
+      <div class="block">
+        <p>Left Panel content here</p>
+        <p><a class="panel-close" href="#">Close me</a></p>
+        <p><a class="panel-open" href="#" data-panel=".panel-right-1">Open Right Panel</a></p>
+      </div>
+    </div>
+    
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+       <div class="page">
+  <div class="page-content">
+    <!-- Static Navbar -->
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="left">
+          <a class="link back">
+            <i class="icon icon-back"></i>
+            <span class="if-not-md">Back</span>
+          </a>
+        </div>
+        <div class="title">Static Navbar</div>
+        <div class="right"></div>
+      </div>
+    </div> 
+        <div class="page">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="if-not-md">Back</span>
+          </a>
+        </div>
+      <div class="title">Static Tabs</div>
+    </div>
+  </div>
+  <div class="toolbar tabbar toolbar-bottom">
+    <div class="toolbar-inner">
+      <a href="#tab-1" class="tab-link tab-link-active">chat</a>
+      <a href="#tab-2" class="tab-link">menu</a>
+      <a href="#tab-3" class="tab-link">profile</a>
+    </div>
+  </div>
+
+          <!-- Scrollable page content -->
+               
+          <div class="page-content block">
+
+            <p><a class="button popup-open" href="#" data-popup=".popup-about">Open About Popup</a></p>
+
+            <br/>
+            <h1 class="font-regular text-color-blue text-align-right"> text regular</h1>
+            <h1 class="font-light text-color-green text-align-center"> text light</h1>
+            <h1 class="font-bolds text-color-red"> text bold</h1>
+            <!-- Link to another page -->
+
+           <p><a class="button popup-close" href="#" data-popup=".popup-close text-color-blue">Open About Popup</a></p>
+
+            <i class="f7-icons">logo_instagram</i>
+            <i class="f7-icons">logo_facebook</i>
+            <i class="f7-icons">logo_twitter</i>
+            <br />
+            <br />
+            <div class="row">
+          <div class="col-30 bg-color-orange">30% (.col)</div>
+          <div class="col-70 bg-color-orange">70% (.col)</div>
+        </div>
+        <br/>
+        <br/>
+        <div class="row">
+    <button class="col button button-fill open-dialogs">alert</button>
+    <button class="col button button-fill">Button</button>
+    <button class="col button button-fill">Button</button>  
+  </div>
+
+  <div class="popup popup-push">
+    <div class="block">
+      <p>Popup Push </p>
+      <p><a class="link popup-close" href="#">Close popup</a></p>
+      <p> </p>>Lorem ipsum dolor sit amet...</p>
+    </div>
+  </div>
+  <div class="card">
+  <div class="card-content card-content-padding">This is a simple card with plain text, but cards can also contain their own header, footer, list view, image, or any other element.</div>
+</div>
+<br />
+
+<div class="card">
+  <div class="card-header">Card header</div>
+  <div class="card-content card-content-padding">Card with header and footer. Card headers are used to display card titles and footers for additional information or just for custom actions.</div>
+  <div class="card-footer">Card Footer</div>
+</div>
+<div class="card card-expandable">
+  <div class="card-content">
+    <div class="bg-color-red" style="height: 300px">
+      <div class="card-header text-color-white display-block">
+        Framework7
+        <br>
+        <small style="opacity: 0.7">Build Mobile Apps</small>
+      </div>
+      <a href="#" class="link card-close card-opened-fade-in color-white" style="position: fixed; right: 15px; top: 15px">
+        <i class="icon f7-icons">xmark_circle_fill</i>
+      </a>
+    </div>
+    <div class="card-content-padding">
+      <p>Framework7 - is a free and open source HTML mobile framework to develop hybrid mobile apps or web apps with iOS or Android (Material) native look and feel. It is also an indispensable prototyping apps tool to show working app prototype as soon as possible in case you need to.</p>
+      ...
+    </div>
+  </div>
+</div>
+      <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" data-slides-per-view="3" class="swiper-container swiper-init demo-swiper">
+  <div class="swiper-pagination"></div>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+</div>      
+              
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="js/framework7.bundle.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script>
+      var $$ = Dom7;
+
+// Alert
+$$('.open-dialogs').on('click', function () {
+  app.dialog.alert('selamat');
+});
+    </script>
+    <script>  
+      var $$ = Dom7;
+
+// DOM events for About popup
+$$('.popup-close').on('popup:open', function (e) {
+  console.log('About popup open');
+});
+$$('.popup-about').on('popup:opened', function (e) {
+  console.log('About popup opened');
+});
+    </script>
+  </body>
+</html>
